@@ -7,7 +7,7 @@ export const Container = styled(Paper)`
   flex-direction: column;
   align-items: left;
   width: calc(100vw - 4rem);
-  max-width: 28rem;
+  max-width: 45rem;
   max-height: calc(100dvh - 4rem);
   z-index: 9999;
 `

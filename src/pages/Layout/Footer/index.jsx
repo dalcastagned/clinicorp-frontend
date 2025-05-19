@@ -7,13 +7,23 @@ const Footer = () => {
   const { mode } = useColorScheme()
 
   return (
-    <S.Footer mode={mode}>
+    <S.Footer component='footer' mode={mode}>
       Feito por Daniel Dalcastagne
-      <S.LinkStyled href='https://www.linkedin.com/in/daniel-dalcastagne/' target='_blank'>
-        <FaLinkedin />
+      <S.LinkStyled
+        href='https://www.linkedin.com/in/daniel-dalcastagne/'
+        target='_blank'
+        rel='noopener noreferrer'
+        aria-label='LinkedIn de Daniel Dalcastagne (abre em nova aba)'
+      >
+        <FaLinkedin aria-hidden='true' focusable='false' />
       </S.LinkStyled>
-      <S.LinkStyled href='https://github.com/dalcastagned' target='_blank'>
-        <FaGithub />
+      <S.LinkStyled
+        href='https://github.com/dalcastagned'
+        target='_blank'
+        rel='noopener noreferrer'
+        aria-label='GitHub de Daniel Dalcastagne (abre em nova aba)'
+      >
+        <FaGithub aria-hidden='true' focusable='false' />
       </S.LinkStyled>
     </S.Footer>
   )

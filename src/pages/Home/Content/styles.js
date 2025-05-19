@@ -1,7 +1,7 @@
 import { Box, css, styled, TableCell as TableCellMUI } from '@mui/material'
 
 export const Container = styled(Box)`
-  padding: 1rem 1rem 0 1rem;
+  padding: 0 1rem 0 1rem;
   height: 100%;
   width: 100%;
 `

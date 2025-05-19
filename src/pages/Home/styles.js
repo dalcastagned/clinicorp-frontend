@@ -14,10 +14,7 @@ export const Container = styled(Box)`
       border: 0.125rem solid ${currentColorSchemePalette.primary.main};
       border-radius: ${theme.shape.borderRadius}px;
       background-color: ${currentColorSchemePalette.background.paper};
-
-      > div {
-        border-bottom: 0.125rem solid ${currentColorSchemePalette.primary.main};
-      }
+      gap: 1rem;
     `
   }}
 `

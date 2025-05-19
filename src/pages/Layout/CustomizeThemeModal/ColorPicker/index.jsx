@@ -7,14 +7,20 @@ const ColorPicker = ({ color }) => {
   const { primaryColor, handleChangePrimaryColor } = useTheme()
   const { mode } = useColorScheme()
 
+  const isSelected = primaryColor === color
+
   return (
     <S.Picker
+      component='button'
+      role='radio'
+      aria-checked={isSelected}
+      aria-label={`Selecionar cor ${color}`}
       color={color}
-      selected={primaryColor === color}
+      selected={isSelected}
       onClick={() => handleChangePrimaryColor(color)}
       mode={mode}
     >
-      {primaryColor === color && <S.CheckIcon />}
+      {isSelected && <S.CheckIcon />}
     </S.Picker>
   )
 }
