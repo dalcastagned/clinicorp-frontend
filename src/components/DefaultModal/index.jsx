@@ -17,7 +17,7 @@ export const DefaultModal = ({
   const { mode } = useColorScheme()
 
   return (
-    <Dialog open={open} onClose={handleClose} maxWidth='xl' role='dialog' aria-modal='true'>
+    <Dialog open={open} onClose={handleClose} maxWidth='xl' aria-modal='true'>
       <S.Container>
         <S.Title component='h2'>{title}</S.Title>
 

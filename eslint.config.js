@@ -25,5 +25,20 @@ export default [
       ...reactHooks.configs.recommended.rules,
       'no-unused-vars': ['error', { varsIgnorePattern: '^[A-Z_]' }],
     },
+    files: ['**/*.test.js', '**/*.spec.js', '**/*.test.jsx', '**/*.spec.jsx', 'src/setupTests.js'],
+    languageOptions: {
+      globals: {
+        ...globals.jest,
+        ...globals.node,
+        ...globals.browser,
+      },
+      parserOptions: {
+        ecmaVersion: 'latest',
+        sourceType: 'module',
+        ecmaFeatures: {
+          jsx: true,
+        },
+      },
+    },
   },
 ]
