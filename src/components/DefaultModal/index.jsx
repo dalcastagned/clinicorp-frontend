@@ -41,7 +41,7 @@ export const DefaultModal = ({
                 {!submitLoading ? (
                   submitText || 'Salvar'
                 ) : (
-                  <CircularProgress size={24.5} color='inherit' sx={{ svg: { color: 'white' } }} />
+                  <CircularProgress size={24.5} sx={{ svg: { color: 'white' } }} />
                 )}
               </Button>
             )}
